@@ -1,0 +1,51 @@
+<com.example.mycalendertest.SwipeLayout
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollX="0dp"
+    android:clipChildren="false"
+    android:background="@drawable/shape_ff5353_20"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 菜单布局 -->
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_top"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="置顶"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- 内容布局 -->
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_fff_20">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="sssss"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+    </FrameLayout>
+</com.example.mycalendertest.SwipeLayout>
